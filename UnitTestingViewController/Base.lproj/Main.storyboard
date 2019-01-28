@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="UnitTestingViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-qS-4Pb">
+                                <rect key="frame" x="10" y="328.5" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USQ-G7-dgp">
+                                <rect key="frame" x="10" y="378.5" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa9-1h-yHn">
+                                <rect key="frame" x="166" y="428.5" width="42" height="30"/>
+                                <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <action selector="acessSystem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zk6-DZ-jbR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="USQ-G7-dgp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6xH-qW-KhY"/>
+                            <constraint firstItem="kR2-qS-4Pb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YfR-vX-Srq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="USQ-G7-dgp" secondAttribute="trailing" constant="10" id="ZUT-Dg-Yqf"/>
+                            <constraint firstItem="oa9-1h-yHn" firstAttribute="top" secondItem="USQ-G7-dgp" secondAttribute="bottom" constant="20" id="ag8-cz-Rrr"/>
+                            <constraint firstItem="USQ-G7-dgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hue-ao-mxb"/>
+                            <constraint firstItem="USQ-G7-dgp" firstAttribute="top" secondItem="kR2-qS-4Pb" secondAttribute="bottom" constant="20" id="lsM-HK-RDb"/>
+                            <constraint firstItem="oa9-1h-yHn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wfn-TE-kVp"/>
+                            <constraint firstItem="kR2-qS-4Pb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xv1-f9-P6R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kR2-qS-4Pb" secondAttribute="trailing" constant="10" id="yBd-3m-j3J"/>
+                            <constraint firstItem="kR2-qS-4Pb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ytF-2i-7gs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnEnter" destination="oa9-1h-yHn" id="2dV-xc-tM1"/>
+                        <outlet property="txtMail" destination="kR2-qS-4Pb" id="u7x-Co-1qS"/>
+                        <outlet property="txtPass" destination="USQ-G7-dgp" id="PSH-SJ-xTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
